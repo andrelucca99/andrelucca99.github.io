@@ -1,3 +1,7 @@
+body {
+    background-color: #9DC4B5;
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #086788;
@@ -14,8 +18,9 @@ em {
     color: #086788;
 }
 
-body {
-    background-color: #9DC4B5;
+#foto{
+    border-radius: 100%;
+    width: 300px;
 }
 
 .altera_1 {
