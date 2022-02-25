@@ -1,11 +1,33 @@
 body {
     background-color: #9DC4B5;
+    padding: 3%;
 }
 
-h1 {
+#foto {
+    float: left;
+    height: 280px;
+    padding: 10px;
+    background-color: rgb(148, 147, 147);
+}
+
+.image_container {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.meu_nome {
     font-family: Arial, Helvetica, sans-serif;
     color: #086788;
     text-decoration: underline;
+    text-align: center;
+}
+
+#sobre {
+    position: absolute;
+    top: 36%;
+    right: 10%;
+    line-height: 1.5em;
+    font-size: 18px;
 }
 
 h2, h3 {
@@ -42,4 +64,9 @@ em {
 .indece {
     text-decoration: none;
     color: #086788;
+}
+
+ul li:nth-child(odd) {
+    background-color: #1e586b;
+    color: white;
 }
