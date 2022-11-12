@@ -1,0 +1,35 @@
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: #F7FFF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+}
+
+.banner h1 {
+    font-size: 3em;
+    color: #555;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 300;
+}
+
+.btn_rede {
+    position: relative;
+    display: inline-block;
+    color: #2196f3;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-radius: 10%;
+    weight: 50px;
+    height: 40px;
+    padding: 2px;
+}

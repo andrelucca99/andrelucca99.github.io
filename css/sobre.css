@@ -1,0 +1,84 @@
+.about {
+    background: #80A4ED;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#w50 img{
+    min-width: 10%;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#icon_perfil img{
+    min-width: 10%;
+    border-radius: 50%;
+    border: 1px solid #80A4ED;
+    box-shadow: 5px 1px #80A4ED;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#sobre__min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    width: 80%;
+}
+
+#sobre__min p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.skills {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    text-align: center;
+}
+
+.skills .rtl {
+    margin-left: 0px;
+}
+
+.skills .tys {
+    margin-left: 0px;
+}
+
+.contentBx h2 {
+    font-size: 24px;
+    color: #555;
+}
+
+.servicesBx img {
+    width: 70px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.icons {
+    font-size: 50px;
+    color: #80A4ED;
+}
+
+.servicesBx p {
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+}

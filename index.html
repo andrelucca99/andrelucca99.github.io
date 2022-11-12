@@ -1,66 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>André Lucas</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
 </head>
-
 <body>
-    <div>
-        <h1 class="meu_nome">André Lucas Elias</h1>
-
-        <div class="image_container">
-            <img src="https://avatars.githubusercontent.com/u/66281231?v=4" id="foto"
-                alt="Foto de perfil do meu portfólio">
-
-            <p id="sobre">Olá, me chamo <strong><em>André</em></strong> sou um jovem padawan na área de programação,
-                sou uma pessoa que sempre <br>adora aprender à cada dia, e meu foco no momento é
-                em me tornar um desenvolverdor Web.
-            </p>
+    <header>
+        <a href="#" class="logo">&lt;/André&gt;</a>
+        <div class="toggle" onClick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onClick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onClick="toggleMenu();">Sobre</a></li>
+            <li><a href="#work" onClick="toggleMenu();">Projetos</a></li>
+            <li><a href="#contato" onClick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h1>Olá, seja bem vindo!</h1>
+            <h3>Me chamo André Lucas, desenvolvedor Front-End.</h3>
+            <a href="https://www.linkedin.com/in/andr%C3%A9-lucas-41a813157/" target="_blank" class="btn_rede"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/andrelucca99" target="_blank" class="btn_rede"><i class="fa-brands fa-github"></i></a>
         </div>
+        <img src="img/perfil.png" id="perfil" alt="Foto de perfil" />
+    </section>
+
+    <section class="about" id="about">
+        <section class="content">
+            <div class="contentBx">
+                <div id="sobre__min">
+                    <h2>Um pouco sobre mim</h2>
+                    <p>
+                        Olá me chamo André Lucas, sou um jovem padawan na área de desenvolvimento web. Sou uma pessoa que ama Tecnologia e tudo que ela pode proporcionar para o mundo. Comecei essa minha jornada, com um curso de Web Designer em 2015, apesar de não saber muito bem do que se tratava naquela época, com o decorrer do curso fui apredendo e me interessado por essa área. Agora estudo Desenvolvimento Web na Trybe, uma escola que ensina a programar, a aprender e a trabalhar. Trabalho e acredito em ações que possam gerar um impacto positivo na vida das pessoas.
+                    </p>
+
+                    <h2>Habilidades</h2>
+
+                    <div class="skills">
+                        <div class="servicesBx">
+                            <i class="fa-brands fa-html5 icons"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="servicesBx">
+                            <i class="fa-brands fa-css3-alt icons"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="servicesBx">
+                            <i class="fa-brands fa-square-js icons"></i>
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div class="servicesBx">
+                            <i class="fa-brands fa-react icons"></i>
+                            <p>REACT</p>
+                        </div>
+                        <div class="servicesBx">
+                            <img src="img/rtl.png" class="rtl" alt="">
+                            <p>Testing Library</p>
+                        </div>
+                        <div class="servicesBx">
+                            <img src="img/ts.png" class="tys" alt="">
+                            <p>TYPESCRIPT</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="w50" id="icon_perfil">
+                <img src="img/foto.jpeg" alt="foto do desenvolverdor desse portfolio">
+            </div>
+        </section>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Projetos</h2>
+            <p>Alguns dos projetos que desenvolvi e que tenho orgulho de compartilhar para as pessoas verem meu trabalho.</p>
+        </div>
+        <section class="content">
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></i> 
+                    </li>
+                </ul>
+                <img src="./img/livro.gif" alt="">
+                <div class="con-text">
+                    <h2>Livro</h2>
+                    <p>
+                        Projeto, para treinar meu HTML e CSS e com uma ajudinha de JavaScript.
+                        <button>
+                            Site
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"><a href="#" target="_blank"><i class="fa-brands fa-github"></a></i> 
+                    </li>
+                </ul>
+                <img src="./img/gameboy.gif" alt="">
+                <div class="con-text">
+                    <h2>GameBoy Color</h2>
+                    <p>
+                        Desenvolvi esse porjeto, para treinar meu HTML e CSS e com uma ajudinha de JavaScript.
+                        <button>
+                            Site
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <ul class="ul">
+                    <li>
+                        <i class="bx bx-drink"><a href="#" target="_blank"><i class="fa-brands fa-github"></a></i> 
+                    </li>
+                </ul>
+                <img src="./img/star.gif" alt="">
+                <div class="con-text">
+                    <h2>Star Wars</h2>
+                    <p>
+                        Desenvolvi esse porjeto, para treinar meu HTML e CSS e com uma ajudinha de JavaScript.
+                        <button>
+                            Site
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="heading white">
+            <h2>Contato</h2>
+            <p>Para entrar em contato, basta enviar uma mensagem por e-mail ou Linkedin</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Informações</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="text">
+                            <h3>Cidade:</h3>
+                            <p>São Paulo-SP</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3 id="testeE">Email:</h3>
+                            <p>andrelucca99@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text">
+                            <h3>Redes:</h3>
+                            <p><a href="https://www.linkedin.com/in/andr%C3%A9-lucas-41a813157/" target="_blank"><i class="fa-brands fa-linkedin icon_contact"></i></a></p>
+                            <p><a href="https://github.com/andrelucca99" target="_blank"><i class="fa-brands fa-github icon_contact"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Mensagem</h3>
+                    <input type="text" name="" placeholder="Nome">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2022 André Lucas </p>
     </div>
-
-    <p>
-        <strong>
-            <h2>Nacionalidade: </h2>
-        </strong>
-        Brasileiro - São Paulo-SP
-    </p>
-
-    <p id="habi"><strong>
-            <h2>Minhas halidades que me orgulho:</h2>
-        </strong>
-    <ul>
-        <li class="altera_1">Determinação</li>
-        <li class="altera_2">Foco</li>
-        <li class="altera_3">Empatia</li>
-        <li class="altera_4">Colaboração</li>
-    </ul>
-    </p>
-
-    <p id="outrasHabi"><strong>
-            <h2>Outras halidades:</h2>
-        </strong>
-    <ul>
-        <li class="altera_1">HTML</li>
-        <li class="altera_2">CSS</li>
-    </ul>
-    </p>
-
-    <h3>Indece: </h3>
-
-    <p>
-        <a href="#foto" class="indece">Foto perfil</a> |
-
-        <a href="https://blog.betrybe.com/?utm_medium=email&_hsmi=200303760&_hsenc=p2ANqtz-
-        9ZJPfS31u2seZPv8RPbP3Sok6fEURyVpsC-WHKB7eVbKhWRCG6R9uOkl7i3x-Y5nsyfv7_-ztamheEjl-
-        tcVsj4WmPHQ&utm_content=200303760&utm_source=hs_automation" target="_blank" class="indece">Blog da Trybe!</a> |
-
-        <a href="#sobre" class="indece">Sobre</a> | <a href="#habi" class="indece">Habilidade</a> | <a
-            href="#outrasHabi" class="indece">Outras Habilidade</a>
-    </p>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
